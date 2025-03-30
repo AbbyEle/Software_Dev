@@ -6,69 +6,138 @@
     <title>HTML structure</title>
 </head>
 <body>
- <h1>Lists</h1>  
- <h2>Ordered List</h2> 
- <ol>
-    <li>Never give up!</li>
-    <li>Always complete class and lab asignments.</li>
- </ol>
+    <h1>Lists</h1>  
+    <h2>Ordered List</h2> 
+    <ol>
+        <li>Never give up!</li>
+        <li>Always complete class and lab assignments.</li>
+    </ol>
 
- <ol type="a">
-    <li>Never give up!</li>
-    <li>Always complete class and lab asignments.</li>
- </ol>
+    <ol type="a">
+        <li>Never give up!</li>
+        <li>Always complete class and lab assignments.</li>
+    </ol>
 
- <h2>Unordered List</h2>
- <ul>
-    <li>Apples</li>
-    <li>Oranges</li>
-    <li>Grapes</li>
- </ul>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Grapes</li>
+    </ul>
 
- <h2>Definition or Description List</h2>
- <dl>
-    <dt><strong>Cats</strong></dt>
-    <dd>The cat is a domestic species of small carnivorous mammal.</dd>
-    <br>
-    <dt><strong>Dogs</strong></dt>
-    <dd>The dog is a domesticated descendant of the wolf.</dd>
- </dl>
+    <h2>Definition or Description List</h2>
+    <dl>
+        <dt><strong>Cats</strong></dt>
+        <dd>The cat is a domestic species of small carnivorous mammal.</dd>
+        <dt><strong>Dogs</strong></dt>
+        <dd>The dog is a domesticated descendant of the wolf.</dd>
+    </dl>
 
- <h2><Tables</h2>
- <table border="3">
-    <tr>
-        <td>Column 1</td>
-        <td>Column 2</td>
-        <td>Column 3</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>20</td>
-        <td>30</td>
-    <tr>
-    </tr>
-        <td>60</td>
-        <td>90</td>
-        <td>120</td>
-    </tr>
-    <table>
-        
+    <h2 id="tables">Tables</h2>
+    <table border="3">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>90</td>
+            <td>120</td>
+        </tr>
     </table>
-    <tr>
-        <td></td>
-        <th>Saturday</th>
-        <th>Sunday</th>
-    <tr>
-    </tr>
-        <th>Tickets sold</th>
-        <th align="center">120</th>
-        <td align="center">135</td>
-    <tr>
-    </tr>
-        <th>Total sales</th>
-        <td align="center">$600</td>
-        <td align="center">$675</td>
-    </tr>
- </table>
+
+    <br><br>
+
+    <table border="3">
+        <tr bgcolor="lightpurple" width="20%">
+            <td></td>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <th>Tickets sold</th>
+            <td align="center">120</td>
+            <td align="center">135</td>
+        </tr>
+        <tr>
+            <th>Total sales</th>
+            <td align="center">$600</td>
+            <td align="center" bgcolor="lightpink">$675</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table width="400" height="120" bgcolor="lightgreen">
+        <tr bgcolor="gray">
+            <th colspan="2">Dancing course fee</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Adult, 18+ years-old</th>
+            <td align="center">$250</td>
+        </tr>
+        <tr>
+            <th>Teen, between 10 and 17 years-old</th>
+            <td align="center">$135.55</td>
+        </tr>
+    </table> 
+
+    <h2>Links</h2>
+    <p>Link to open an external website</p>
+    <p>Visit <a href="http://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">QCC website</a> for more information.</p>
+
+    <p><em>Link to an email address</em></p>
+    <p>Contact Professor Wu <a href="mailto:hwu@qcc.cuny.edu">by email</a></p>
+
+    <p><em>Link from an image</em></p>
+    <figure>
+        <a href="https://www.nyc.gov/" target="_blank" rel="noopener noreferrer">
+            <img src="images/nyc_logo.png" alt="NYC logo">
+        </a>
+    </figure>
+
+    <br>
+
+    <p>Connect to QCC social media</p>
+    <figure>
+        <a href="https://www.facebook.com/QueensboroughCUNY" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook_logo_icon.svg" alt="Facebook Logo">
+        </a>
+    </figure>
+
+    <ul>
+        <li><a href="centralpark.html">Central Park</a></li>
+        <li><a href="times_square.html">Times Square</a></li>
+    </ul>
+
+    <br>
+
+    <p><em>Image Mapping</em></p>
+    <figure>
+        <img src="images/nyc.jpg" alt="Image of New York City" width="500px" height="400px" title="Visit New York City" usemap="#nyc_map">
+        <figcaption>I LOVE NYC</figcaption>
+    </figure>
+
+    <!-- Define map -->
+    <map name="nyc_map">
+        <area shape="rect" coords="200,150,300,250" href="centralpark.html" alt="Link to Central Park webpage">
+    </map>
+
+    <br>
+
+    <p><em>Link to a specific section of the same webpage</em></p>
+    <nav>
+        <a href="#">Go to the beginning</a> |
+        <a href="#tables">Tables</a> |
+        <a href="#">Links</a> |
+        <a href="#">Images</a>
+    </nav>
+
 </body>
 </html>
