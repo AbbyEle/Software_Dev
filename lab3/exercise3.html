@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witty Inventions</title>
+    <style>
+        figure img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .bold-italic {
+            font-weight: bold;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Witty Inventions</h1>
+    </header>
+
+    <!-- Figure with four images -->
+    <section id="image-gallery">
+        <h2>Image Gallery</h2>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Image 1">
+            <figcaption>Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Image 2">
+            <figcaption>Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Image 3">
+            <figcaption>Image 3</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/200" alt="Image 4">
+            <figcaption>Image 4</figcaption>
+        </figure>
+    </section>
+
+    <figure 
+    class="image-container">
+        <a href="https://www.example.com" target="_blank">
+            <img src="image1.jpg" alt="Image 1" width="200" height="200">
+        </a>
+        <a href="https://www.example.com" target="_blank">
+            <img src="image2.jpg" alt="Image 2" width="200" height="200">
+        </a>
+        <a href="https://www.example.com" target="_blank">
+            <img src="image3.jpg" alt="Image 3" width="200" height="200">
+        </a>
+        <a href="https://www.example.com" target="_blank">
+            <img src="image4.jpg" alt="Image 4" width="200" height="200">
+        </a>
+    </figure>
+
+    <!-- Internal links -->
+    <nav>
+        <h2>Navigate Within the Page</h2>
+        <ul>
+            <li><a href="#image-gallery">Image Gallery</a></li>
+            <li><a href="#definition-list">Definition List</a></li>
+            <li><a href="#table">Table Section</a></li>
+        </ul>
+    </nav>
+
+    <!-- Description list -->
+    <section id="definition-list">
+        <h2><span class="bold-italic">Definition List</span></h2>
+        <dl>
+            <dt>Vehicles</dt>
+            <dd>HTML stands for HyperText Markup Language. It is the standard markup language for documents designed to be displayed in a web browser.</dd>
+            <dt>Electricity</dt>
+            <dd>Cascading Style Sheets (CSS) describe how HTML elements are to be displayed on screen, paper, or in other media.</dd>
+            <dt>Technology</dt>
+            <dd>JavaScript is a programming language that is used to create interactive effects within web browsers.</dd>
+        </dl>
+    </section>
+
+    <!-- Table with background color and bold title -->
+    <section id="table">
+        <h2><strong>Table with Background Color</strong></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="background-color: #4CAF50; color: white;">Header 1</th>
+                    <th style="background-color: #4CAF50; color: white;">Header 2</th>
+                    <th style="background-color: #4CAF50; color: white;">Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #f2f2f2;">Cell 1</td>
+                    <td style="background-color: #f2f2f2;">Cell 2</td>
+                    <td style="background-color: #f2f2f2;">Cell 3</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f2f2f2;">Cell 4</td>
+                    <td style="background-color: #f2f2f2;">Cell 5</td>
+                    <td style="background-color: #f2f2f2;">Cell 6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Unordered list -->
+    <section>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </section>
+
+    <!-- External link to Google Maps -->
+    <section>
+        <h2>Useful Links</h2>
+        <p>Hours of Operation: 9 AM - 5 PM</p> <!-- Hours of operation is plain text -->
+    
+        <p>Directions:</p>
+        <ul>
+            <li>
+                <strong>Witty King David Inventions</strong><br>
+                <a href="https://www.google.com/maps?q=14800+California+Rd,+California+Los+Angelos,+13245" target="_blank">14800 California rd, California Los Angeles, 13245</a>
+            </li>
+            <br> <!-- Space between each address -->
+            <li>
+                <strong>Witty Dominique Inventions</strong><br>
+                <a href="https://www.google.com/maps?q=27+Manhattan+St,+NY,+NY,+97655" target="_blank">27 Manhattan St, NY, NY, 97655</a>
+            </li>
+            <br>
+            <li>
+                <strong>Witty Joshua Inventions</strong><br>
+                <a href="https://www.google.com/maps?q=342+Florida+Rd,+Miami+Fl,+89643" target="_blank">342 Florida rd, Miami, FL, 89643</a>
+            </li>
+            <br>
+            <li>
+                <strong>Witty Hadassah Inventions</strong><br>
+                <a href="https://www.google.com/maps?q=876+Chicago+Rd,+Chicago,+Illinois,+65466" target="_blank">876 Chicago rd, Chicago, Illinois, 65466</a>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
