@@ -104,7 +104,7 @@ figcaption{margin-bottom: 50px;}
         width: 30%;
         border-radius: 10px;
         overflow: hidden;
-        margin: 2%;
+        margin: 5% 1%;
         box-shadow: 1px 1px 3px gray;
     }
     .cardtitle{
@@ -130,3 +130,171 @@ figcaption{margin-bottom: 50px;}
         background-color: crimson;
         text-decoration: underline;
     }
+    /*navigation tabs*/
+    .navbar{
+        width: 300px;
+
+    }
+    .navbar li{
+        list-style-type:none;
+        
+
+    }
+    .navbar li a {
+        background-color: purple;
+        color: white;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navbar li a:hover{
+        background-color: lightcyan;
+        color: purple;
+        text-decoration: underline;
+        font-weight: 900;
+        border: 1px solid purple;
+    }
+    html{scroll-behavior: smooth;}
+    *{box-sizing: border-box;}
+    .navbarhorizontal{
+        background-color: orangered;
+    }
+
+    .navbarhorizontal{
+        background-color: orangered;
+    }
+    .navbarhorizontal a{
+        color: whitesmoke;
+        text-decoration: none;
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        padding: 20px;
+    }
+    .navbarhorizontal a:hover{
+        background-color: black;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+
+    /* colors */
+    .rgbcontainer, .hexcontainer{
+        border: solid gray 1px;
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+        padding: 20px;
+    }
+    .rgbcontainer div, .hexcontainer div{
+        border: solid green 1px;
+        width: 100px;
+        height: 50px;
+    }
+    .rgbcontainer div:nth-child(1){background-color: rgb(31, 105, 31);}
+    .rgbcontainer div:nth-child(2){background-color: rgb(101, 15, 109);}
+    .rgbcontainer div:nth-child(3){background-color: rgb(223, 43, 178);}
+    .hexcontainer div:nth-child(1){background-color: #d2641E;}
+    .hexcontainer div:nth-child(2){background-color: #0aca3a;}
+    .hexcontainer div:nth-child(3){background-color: #1eccd2;}
+    
+    /*positions*/
+    .imgcontainer{
+        width: 50%;
+        box-shadow:2px 2px 5px #d2641E;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+    .imgtitle{
+        background-color: rgb(190, 20, 150,0.7);
+        position: absolute;
+        top:90px;
+        left: 20px;
+        right: 20px;
+        padding: 2%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .fixedtabs{
+        position: fixed;
+       top: 0px;
+        width: 100%;
+    }
+    /*Background image*/
+    .imgbackground, .imgbackground2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+.imgbackground div, .imgbackground2 div{
+    width: 30%;
+    height: 200px;
+    border: solid gray 1px;
+}
+.imgbackground div:nth-child(1){
+    background-image: linear-gradient(red, darkblue); 
+}
+.imgbackground div:nth-child(2){
+    background-image: linear-gradient(to left, red, darkblue);
+}
+.imgbackground div:nth-child(3){
+    background-image: linear-gradient(to bottom left, red, darkblue);
+}
+.imgbackground2 div:nth-child(1){
+    background-image: linear-gradient(to top right, red, darkblue, yellow);
+}
+.imgbackground2 div:nth-child(2){
+    background-image: linear-gradient(to top right, red, darkblue, yellow, purple);
+}
+.imgbackground2 div:nth-child(3){
+    background-image: linear-gradient(to top right, red 20%, darkblue 60%, yellow 30%, purple 80%);
+}
+/* hero image*/
+.heroimgcontainer{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    border: solid gray 1px;
+   background-image:linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 140, 0.5)
+   ), url("images/img1.jpg");
+    background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative
+}
+.herocontent{
+    background-color: rgba(245, 8, 8, 0.89);
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+.herocontent_title{
+    color: rgba(220, 200, 200, 0.9);
+}
+.herocontent_intro{
+    margin-top: -30px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.herocontent_link{
+    background-color: rgba(0, 0, 140, 0.6);
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+.herocontent_link:hover{
+    background-color: rgba(220, 200, 200, 0.9);
+    color: crimson;
+    font-weight: bolder;
+}

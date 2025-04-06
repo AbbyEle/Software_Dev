@@ -25,7 +25,7 @@
     <H1>Introduction to CSS</H1>
     <p id="intro">CSS allows you to create rules that specify how the content of an element should appear. CSS allows you to create rules that specify how the content of an element should appear<p>CSS allows you to create rules that specify how the content of an element should appear<p>CSS allows you to create rules that specify how the content of an element should appear.</p>
     <p class="author">By: Abigail Elena</p>
-    <h2 class="author">Typology</h2>
+    <h2 class="author" id="typology">Typology</h2>
     <p class="author">Styling text</p>
     <p class="fontweight">Paragraph with font-weight bold</p>
     <p class="fontstyle">Paragraph with font-style italic</p>
@@ -61,7 +61,7 @@
 <div class="radiusbox4">Box 4</div>
 <div class="radiusbox5">Box 5</div>
 
-<h2 class="subtitle">Basic image formatting</h2>
+<h2 class="subtitle" id="images">Basic image formatting</h2>
 <img class="blossomimg blossom1" src="images/img1.jpg" alt="image of a blossom tree ">
 <img class="blossomimg blossom2" src="images/img1.jpg" alt="image of a blossom tree ">
 <img class="blossomimg blossom3" src="images/img1.jpg" alt="image of a blossom tree ">
@@ -109,7 +109,7 @@
         <figure class="images">images container</figure>
     </main>
 
-    <h2>Cards</h2>
+    <h2 id="cards">Cards</h2>
     <section class="cardcontainer">
         <div class="card">
             <img class="imgcard" src="images/img1.jpg" alt="image of a blossom tree">
@@ -128,7 +128,83 @@
             <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
          </div>
 
+         <div class="card2">
+            <img class="imgcard" src="images/img1.jpg" alt="image of a blossom tree">
+            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn</p>
+            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
+         </div>
+
+
+         <div class="card2">
+            <img class="imgcard" src="images/img1.jpg" alt="image of a blossom tree">
+            <h2 class="cardtitle">Brooklyn Botanical Garden</h2>
+            <p class="cardinfo">Brooklyn Botanical Garden occupies 52 acres in central Brooklyn</p>
+            <a class="linkcard2" href="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">Visit Blossom Garden</a>
+         </div>
+
+
     </section>
+
+    <h2 class="subtitle">Navigation tabs</h2>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#typology">Typology</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#cards">Cards</a></li>
+    </ul>
+
+<h2 class="subtitle">Colors</h2>
+<h3>RGB value</h3>
+<section class="rgbcontainer">
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<h3>hex code</h3>
+<section class="hexcontainer">
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<h2 class="subtitle">Positions</h2>
+<div class="imgcontainer">
+    <img src="images/img1.jpg" alt="image of a blossom tree">
+    <p class="imgtitle">Brooklyn Botanical Garden</p>
+
+</div>
+
+<h2 class="subtitle">Background image</h2>
+<section class="imgbackground">
+<div></div>
+<div></div>
+<div></div>
+</section>
+
+<p>Linear gradient with 2+ Colors</p>
+<section class="imgbackground2">
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+    
+<h2>Hero image with linear-gradient</h2>
+<section class="heroimgcontainer">
+    <div class="herocontent">
+        <h3 class="herocontent_title">Brooklyn Botanical Garden</h3>
+        <p class="herocontent_intro">Spring cherries blossom exposition</p>
+        <a class="https://www.bbg.org/collections/cherries" target="_blank" rel="noopener noreferrer">More Info</a>
+    </div>
+
+</section>
+<nav class="navbarhorizontal fixedtabs">
+    <a href="#">Home</a>
+    <a href="#typology">Typology</a>
+    <a href="#images">Images</a>
+    <a href="#cards">Cards</a> 
+</nav>
+
 
 </body>
 </html>
