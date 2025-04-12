@@ -148,4 +148,6 @@ margin: 30px;
     .flexcontainer{background-color: purple;}
     .cardslide{width: 90%; margin: 5%;}
     .gridcontainer{grid-template-columns: 1fr;}
+    .collapsenavbars{display: inline-block;}
+    .navbars{display: none;}
 }
