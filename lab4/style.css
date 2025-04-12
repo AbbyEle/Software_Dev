@@ -255,6 +255,7 @@ figcaption{margin-bottom: 50px;}
 }
 /* hero image*/
 .heroimgcontainer{
+    position: relative;
     width: 800px;
     height: 500px;
     margin: auto;
@@ -263,7 +264,6 @@ figcaption{margin-bottom: 50px;}
    ), url("images/img1.jpg");
     background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative
 }
 .herocontent{
     background-color: rgba(245, 8, 8, 0.89);
@@ -298,3 +298,143 @@ figcaption{margin-bottom: 50px;}
     color: crimson;
     font-weight: bolder;
 }
+
+
+/* LAB EXERCISE*/
+.exercisecontainer {
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .img1, .img2, .img3 {
+    width: 30%;
+    height: 100%;
+    border: solid gray 1px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* First Image */
+  .img1 {
+    background-image: url("pics/img 1.jpg");
+    filter: invert(100%);
+  }
+  
+  .img1 .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFD700;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+  }
+  
+  /* Second Image */
+  .img2 {
+    position: relative;
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    border: solid gray 1px;
+  }
+  
+  /* Blurred background image */
+  .img2 .blurred-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("pics/img 2.jpg") center/cover no-repeat;
+    filter: blur(5px);
+    z-index: 1;
+  }
+  
+  .img2 .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .img2 .caption a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Third Image */
+  .img3 {
+    background-image: url("pics/img 3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 500px;
+    margin: 10px;
+    border: solid gray 1px;
+    color: white;
+  }
+  
+  .img3 .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: rgba(255, 69, 0, 0.7); 
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .img3 p {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+  }
+
+  .img3 .para1 {
+    width: 90%;
+    align-self: flex-start;
+  }
+  
+  .img3 .para2 {
+    width: 75%;
+    align-self: center;
+  }
+  
+  .img3 .para3 {
+    width: 65%;
+    align-self: flex-end;
+  }
