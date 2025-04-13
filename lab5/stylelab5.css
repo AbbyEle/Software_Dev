@@ -151,3 +151,167 @@ margin: 30px;
     .collapsenavbars{display: inline-block;}
     .navbars{display: none;}
 }
+
+
+
+
+
+/* lab exercise*/
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Navigation */
+nav {
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: yellow;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.intro-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+/* Content Sections */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: gray;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: gainsboro;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
