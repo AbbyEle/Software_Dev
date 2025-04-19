@@ -1,4 +1,3 @@
-/* Global Variables */
 :root {
   --primarycolor: rgb(212, 175, 55);
   --primarylightcolor: rgb(11, 70, 4);
@@ -9,188 +8,260 @@
   --accentcolor: rgb(212, 175, 55);
 }
 
-/* Body Styling */
+/* General Styling */
 body {
+  font-family: Arial, sans-serif;
   background-color: var(--backgroundcolor);
   color: var(--textcolor);
-  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header Styling */
-header.titlebg {
+header {
   background-color: var(--primarycolor);
-  color: var(--secondarycolor);
-  text-align: center;
+  color: white;
   padding: 20px;
+  text-align: center;
 }
 
-header h1 {
-  margin: 0;
+header .titlebg h1 {
   font-size: 2.5rem;
+  margin: 0;
 }
 
-/* Navigation Styling */
-.nav-links {
-  list-style: none;
+header nav {
+  margin-top: 15px;
+}
+
+header .nav-links {
+  list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
 }
 
-.nav-links a {
-  color: var(--primarylightcolor);
+header .nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header .nav-links a {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.nav-links a:hover {
-  color: var(--accentcolor);
+header .nav-links a:hover {
+  color: var(--secondarycolor);
 }
 
-/* Intro Section Styling */
+/* Intro Section */
 .intro-section {
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-images {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.intro-text {
-  max-width: 700px;
-  text-align: left;
-}
-
-.intro-text h2,
-.intro-text h3 {
-  color: var(--headercolor);
-}
-
-.intro-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 600px;
-}
-
-.intro-section ul {
-  padding-left: 20px;
-}
-
-.intro-section ul li {
-  margin-bottom: 10px;
-}
-
-/* Activities Section Styling */
-.activities-section {
-  background-color: var(--primarylightcolor);
-  padding: 20px;
-  text-align: center;
-}
-
-.activities-section h2 {
-  font-size: 2rem;
-  color: var(--secondarycolor);
-}
-
-.activities-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.activities-section ul li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-/* Locations Section Styling */
-.locations-section {
-  background-color: var(--primarycolor);
-  padding: 20px;
-  text-align: center;
-}
-
-.locations-section h2 {
-  font-size: 2rem;
-  color: var(--secondarycolor);
-}
-
-.locations-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.locations-section ul li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-/* Main Image Styling */
 .main-image {
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   border: 4px solid var(--accentcolor);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   filter: brightness(95%);
+  transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .intro-section {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .main-image {
-      width: 80%;
-  }
+.main-image:hover {
+  transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
-  .nav-links {
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  .intro-section p {
-      font-size: 1rem;
-      padding: 0 10px;
-  }
-
-  .main-image {
-      width: 100%;
-  }
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f8f8;
 }
 
-/* Desktop Styling */
-@media (min-width: 1200px) {
-  body {
-      padding: 40px;
-  }
-
-  .intro-section p {
-      font-size: 1.2rem;
-  }
-
-  .main-image {
-      width: 400px;
-  }
+.intro-images {
+  flex: 1;
 }
+
+.intro-text {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.large-image {
+  width: 100%; 
+  height: auto;
+}
+
+/* Church Highlights Section */
+#highlights {
+  padding: 30px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#highlights h3 {
+  color: var(--primarycolor);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.highlight-card {
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.highlight-card h4 {
+  color: var(--primarycolor);
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.highlight-card p {
+  color: var(--textcolor);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.highlight-card strong {
+  color: var(--primarycolor);
+}
+
+.highlight-image {
+  flex-shrink: 0;
+  width: 250px;
+  margin-left: 20px;
+}
+
+.highlight-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Church Section - Display churches horizontally */
+.church-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.church-card {
+  width: 30%;
+  text-align: center;
+}
+
+.church-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.church-card a {
+  text-decoration: none;
+}
+
+.church-card h3 {
+  color: var(--primarylightcolor);
+}
+
+.church-card ul {
+  list-style-type: none;
+  padding: 0;
+  color: var(--textcolor);
+}
+
+/* Activities Section */
+.activities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activity-card {
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.activity-img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.activity-img:hover {
+  transform: scale(1.05);
+}
+
+.activity-card p {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.activity-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
 
 /* Footer Styling */
 footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 20px;
   background-color: var(--primarycolor);
-  color: var(--secondarycolor);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-footer p {
-  margin: 0;
-  font-size: 1rem;
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .col-md-4 {
+  width: 30%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondarycolor);
 }
