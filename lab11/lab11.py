@@ -146,3 +146,59 @@ car1.increment_odometer(-5)
 print(car1.read_odometer())
 car1.increment_odometer(8)
 print(car1.read_odometer())
+
+
+print("\n-------EXERCISE-----------")
+
+# Define the Student class
+class Student:
+    def __init__(self, name, age):
+        # Initialize attributes
+        self.name = name
+        self.age = age
+        self.grade = {}  # Dictionary to store subject:grade pairs
+        print(f"Student {self.name} has been created with age = {self.age}")
+
+    def add_grade(self, subject, grade):
+        # Add key:value pair to dictionary
+        self.grade[subject] = grade
+        print(f"Grade added: {subject} = {self.grade[subject]}")
+
+    def get_average_grade(self):
+        # Calculate average of values in the dictionary
+        if not self.grade:
+            return 0.0
+        total = sum(self.grade.values())
+        average = total / len(self.grade)
+        return average
+
+# Create instance of the class
+print("\nCreate student1:")
+student1 = Student("Alice Smith", 17)
+print("\nCreate student2:")
+student2 = Student("Bob Johnson", 18)
+
+# Add grades using dictionary-style updates
+print("\nAdd grades to student1:")
+student1.add_grade("Math", 85.5)
+student1.add_grade("Science", 90.0)
+student1.add_grade("History", 78.5)
+
+print("\nAdd grades to student2:")
+student2.add_grade("Math", 92.0)
+student2.add_grade("Science", 88.5)
+
+# Print the full grade dictionary (Example 1)
+print("\nPrint student1 grade dictionary:")
+print(student1.grade)
+
+print("\nLoop through each subject and grade for student1:")
+for subject in student1.grade:
+    print(f"{subject} has grade = {student1.grade[subject]}")
+
+# Display average grades
+print("\nCalculate and display average grades:")
+avg1 = student1.get_average_grade()
+avg2 = student2.get_average_grade()
+print(f"The average grade for {student1.name} is = {avg1:.2f}")
+print(f"The average grade for {student2.name} is = {avg2:.2f}")
