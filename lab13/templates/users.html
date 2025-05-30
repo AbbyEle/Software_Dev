@@ -1,0 +1,15 @@
+{% extends 'base.html'%} 
+   {%block title%} Users{%endblock%}
+   {%block content%}
+        <h2>User in the list</h2>
+        <form method="POST">
+                <Label for="name">Employee name: </Label>
+                <input type="text" name="mployee_name" id="name"/>
+
+                <label for="userid">Enter employee id: </label>
+                <input type="text" name="employee_id"/>
+
+                <button type="submit"></button>
+
+        </form>
+{%endblock%}

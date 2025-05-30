@@ -1,0 +1,19 @@
+img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    color: blueviolet;
+}
+
+.introimgcontainer, .maincontainer {
+    width: 700px;
+    margin: 2em auto;
+}
+
+.maincontainer {
+    padding: 2rem;
+    border: solid gold 2px;
+}
